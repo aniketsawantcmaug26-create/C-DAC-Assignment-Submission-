@@ -1,7 +1,7 @@
 
 public class ForLoop {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		
 	   // Question 1 Using for loops write a Java Program to display all odd 
 		//numbers from 1 to 1000
