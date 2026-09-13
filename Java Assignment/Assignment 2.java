@@ -13,7 +13,7 @@ public class Array {
 		for(int i=0;i<size;i++) {
 			arr[i]=Consoleinput.getInt(); 
 		}
-		Arrays.sort(arr);
+		Arrays.sort(arr); 
 		for(int j=0;j<size;j++) {
 			System.out.println(arr[j]+" ");
 		}
