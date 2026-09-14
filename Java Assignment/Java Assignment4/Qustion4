@@ -1,0 +1,71 @@
+/*
+4. Create a class named 'Shape' with a method to print "This is shape". Then create
+two other classes named 'Rectangle', 'Circle' inheriting the Shape class, both having
+a method to print "This is rectangular shape" and "This is circular shape"
+respectively. Create a subclass 'Square' of 'Rectangle' having a method to print
+"Square is a rectangle". Now call the method of 'Shape' and 'Rectangle' class by the
+object of 'Square' class */
+
+
+import java.util.Scanner; 
+public class Methods {
+	public static void main(String[] args) {
+			Squaree s1=new Squaree(); 
+			s1.printShape(); 
+			s1.printRectangle(); 
+		
+		}
+	}
+public class Shape {
+	
+	void printShape() {
+		System.out.println("This is shape ");
+	}
+}public class Rectangle extends Shape  {
+		
+	void printRectangle() {
+		System.out.println("thiss is rectangles shape ");
+	}
+public class Squaree extends Rectangle {
+	
+	void print() {
+		System.out.println("Square is rectangle");
+	}
+}
+import java.util.Scanner; 
+public class Methods {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * parent p=new parent(); Child c=new Child(); p.prints(); c.child();
+		 * c.prints();
+		 */
+		
+			//Member m=new Member(name,age,phoneno,address,salary);
+			//m.printsalary(); 
+			/*
+			 * PrimeMembers p=new PrimeMembers(2026,200,true); p.display(); p.display1();
+			 * p.printsalary();
+			 */
+			Squaree s1=new Squaree(); 
+			s1.printShape(); 
+			s1.printRectangle(); 
+		
+		}
+	}
+
+}
+public class Circle extends Shape{
+	
+	void print() {
+		System.out.println();
+	}
+}
+
+public class Squaree extends Rectangle {
+	
+	void print() {
+		System.out.println("Square is rectangle");
+	}
+}
+

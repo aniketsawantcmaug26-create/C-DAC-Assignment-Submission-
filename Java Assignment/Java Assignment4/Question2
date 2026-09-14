@@ -1,0 +1,95 @@
+/*. Create a class named 'Member' having the following members:
+Data members
+1 - Name
+2 - Age
+3 - Phone number
+4 - Address
+5 - Salary
+It also has a method named 'printSalary' which prints the salary of the members.
+Create an object of the above class and take input from the console for each of the 
+fields and finally display the data.
+Now create a class inherited from Members called PrimeMembers and add the 
+properties
+1. JoiningYear
+2. JoiningFees
+3. isActive
+To the PrimeMembers add a method called display and display all the fields from 
+the parent class and derived class. Each of the above classes should have their 
+respective accessors and mutators. */
+
+
+
+import java.util.Scanner;
+
+public class Member {
+	
+	String name; 
+	int age; 
+	String phoneno;
+	String Address;
+	double salary;
+	Member(){
+		Scanner sc=new Scanner(System.in); 
+		System.out.println("Enter you name ");
+		 name=sc.next(); 
+		System.out.println("Enter you age"); 
+		 age=sc.nextInt(); 
+		System.out.println("Enter you phone no ");
+		 phoneno=sc.next(); 
+		System.out.println("Enter you address ");
+		 Address=sc.next();
+		System.out.println("Enter you salary");
+		 salary=sc.nextDouble();
+	}
+	
+	void printsalary() {
+		System.out.println("Salary of Member is : "+salary);
+	}
+	void display() {
+		System.out.println("Name of employee is : "+name);
+		System.out.println("Age of Employee is  : "+age);
+		System.out.println("Phone no Employee   : "+phoneno);
+		System.out.println("Address of Employee : "+Address);
+		//System.out.println("Salary of Empolyee  : "+salary);
+	}
+
+}
+import java.util.Scanner;
+
+public class PrimeMembers extends Member {
+		int joiny; 
+		float joinfee; 
+		boolean isactive; 
+		
+		PrimeMembers(int joiny,float joinfee,boolean isactive){
+			super(); 
+			this.joiny=joiny; 
+			this.joinfee=joinfee; 
+			this.isactive=isactive; 
+		}
+		void display1() {
+			System.out.println("you joining year is : "+joiny);
+			System.out.println("you joinfee         : "+joinfee);
+			System.out.println("you is active       : "+isactive);
+			
+		}
+}
+
+import java.util.Scanner; 
+public class Methods {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * parent p=new parent(); Child c=new Child(); p.prints(); c.child();
+		 * c.prints();
+		 */
+		
+			//Member m=new Member(name,age,phoneno,address,salary);
+			//m.printsalary(); 
+			PrimeMembers p=new PrimeMembers(2026,200,true); 
+			p.display(); 
+			p.display1(); 
+			p.printsalary(); 
+
+		}
+	}
